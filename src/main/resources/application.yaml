@@ -1,0 +1,48 @@
+spring:
+  application:
+    name: EduStream
+  datasource:
+    url: jdbc:postgresql://localhost:5432/EduStream
+    username: postgres
+    password: "12345678"
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+#  mail:
+#    host: smtp.gmail.com
+#    port: 587
+#    username: ordukhanm20@gmail.com
+#    password: vyiywrchnhdotmwr
+#    properties:
+#      mail:
+#        smtp:
+#          auth: true
+#          starttls:
+#            enable: true
+#          ssl:
+#            trust: smtp.gmail.com
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      timeout: 5000
+    cache:
+      type: redis
+      ttl-seconds: 120
+logging:
+  file:
+    name: edustream-service.log
+  level:
+    com:
+      ltc:
+        hr: INFO
+    org:
+      springframework:
+        web: DEBUG
+        data.redis: DEBUG
