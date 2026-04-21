@@ -1,4 +1,4 @@
-package com.ltc.edustream.service;
+package com.ltc.edustream.service.ServiceMethods;
 
 import com.ltc.edustream.dto.request.LessonCreateRequest;
 import com.ltc.edustream.dto.response.LessonResponse;

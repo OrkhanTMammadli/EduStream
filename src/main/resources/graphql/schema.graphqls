@@ -1,0 +1,44 @@
+type CourseResponse {
+    id: ID!
+    title: String!
+    description: String
+    teacherName: String!
+    createdAt: String
+}
+
+input CourseCreateRequest {
+    title: String!
+    description: String
+    teacherName: String!
+}
+
+type LessonResponse {
+    id: ID!
+    courseId: ID!
+    title: String!
+    content: String
+    attachments: [String!]
+    createdAt: String
+}
+
+input LessonCreateRequest {
+    courseId: ID!
+    title: String!
+    content: String
+    attachments: [String!]
+}
+
+type Query {
+    course(id: ID!): CourseResponse
+    courses: [CourseResponse!]!
+    coursesByTeacher(teacherName: String!): [CourseResponse!]!
+    lesson(id: ID!): LessonResponse
+    lessonsByCourse(courseId: ID!): [LessonResponse!]!
+}
+
+type Mutation {
+    createCourse(request: CourseCreateRequest!): CourseResponse!
+    createLesson(request: LessonCreateRequest!): LessonResponse!
+}
+
+

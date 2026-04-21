@@ -14,19 +14,19 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
-#  mail:
-#    host: smtp.gmail.com
-#    port: 587
-#    username: ordukhanm20@gmail.com
-#    password: vyiywrchnhdotmwr
-#    properties:
-#      mail:
-#        smtp:
-#          auth: true
-#          starttls:
-#            enable: true
-#          ssl:
-#            trust: smtp.gmail.com
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ordukhanm20@gmail.com
+    password: nlgvcvernqihrcjl
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          ssl:
+            trust: smtp.gmail.com
   data:
     redis:
       host: localhost
@@ -35,6 +35,10 @@ spring:
     cache:
       type: redis
       ttl-seconds: 120
+  grpc:
+    course:
+      host: localhost
+      port: 6565
 logging:
   file:
     name: edustream-service.log

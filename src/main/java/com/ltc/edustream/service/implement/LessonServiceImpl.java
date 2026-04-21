@@ -4,12 +4,11 @@ import com.ltc.edustream.dto.request.LessonCreateRequest;
 import com.ltc.edustream.dto.response.LessonResponse;
 import com.ltc.edustream.entity.Course;
 import com.ltc.edustream.entity.Lesson;
-import com.ltc.edustream.exception.CourseNotFoundException;
 import com.ltc.edustream.exception.LessonNotFoundException;
 import com.ltc.edustream.mapper.LessonMapper;
 import com.ltc.edustream.repository.CourseRepository;
 import com.ltc.edustream.repository.LessonRepository;
-import com.ltc.edustream.service.LessonService;
+import com.ltc.edustream.service.ServiceMethods.LessonService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

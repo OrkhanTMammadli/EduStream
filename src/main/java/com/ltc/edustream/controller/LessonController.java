@@ -28,7 +28,7 @@ public class LessonController {
         return new ResponseEntity<>(lessonResponse, HttpStatus.OK);
     }
     @GetMapping("/course/{courseId}")
-    public ResponseEntity<List<LessonResponse>> getByCourse (@PathVariable Long courseId){
+    public ResponseEntity<List<LessonResponse>> getLessonByCourseId (@PathVariable Long courseId){
         List<LessonResponse> lessonResponse = lessonServiceImpl.getByCourse(courseId);
         return new ResponseEntity<>(lessonResponse,HttpStatus.ACCEPTED);
     }

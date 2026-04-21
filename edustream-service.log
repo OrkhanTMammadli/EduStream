@@ -1,608 +1,257 @@
-2026-04-19T01:36:28.157+04:00  INFO 12640 --- [EduStream] [main] com.ltc.edustream.EduStreamApplication   : Starting EduStreamApplication using Java 17.0.18 with PID 12640 (C:\Users\Orkhan\IdeaProjects\EduStream\build\classes\java\main started by Orkhan in C:\Users\Orkhan\IdeaProjects\EduStream)
-2026-04-19T01:36:28.166+04:00  INFO 12640 --- [EduStream] [main] com.ltc.edustream.EduStreamApplication   : No active profile set, falling back to 1 default profile: "default"
-2026-04-19T01:36:30.264+04:00  INFO 12640 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2026-04-19T01:36:30.270+04:00  INFO 12640 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-04-19T01:36:30.661+04:00  INFO 12640 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 369 ms. Found 6 JPA repository interfaces.
-2026-04-19T01:36:30.711+04:00  INFO 12640 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2026-04-19T01:36:30.713+04:00  INFO 12640 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2026-04-19T01:36:30.756+04:00  INFO 12640 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.AnswerRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-04-19T01:36:30.757+04:00  INFO 12640 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.CourseRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-04-19T01:36:30.759+04:00  INFO 12640 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.ExamRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-04-19T01:36:30.760+04:00  INFO 12640 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.ExamSessionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-04-19T01:36:30.761+04:00  INFO 12640 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.LessonRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-04-19T01:36:30.762+04:00  INFO 12640 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.QuestionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-04-19T01:36:30.762+04:00  INFO 12640 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
-2026-04-19T01:36:31.281+04:00  INFO 12640 --- [EduStream] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=93d5952c-b681-3706-baea-30c919b59c4a
-2026-04-19T01:36:32.457+04:00  INFO 12640 --- [EduStream] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-04-19T01:36:32.475+04:00  INFO 12640 --- [EduStream] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-04-19T01:36:32.476+04:00  INFO 12640 --- [EduStream] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
-2026-04-19T01:36:32.595+04:00  INFO 12640 --- [EduStream] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4372 ms
-2026-04-19T01:36:32.979+04:00  INFO 12640 --- [EduStream] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-04-19T01:36:33.089+04:00  INFO 12640 --- [EduStream] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
-2026-04-19T01:36:33.817+04:00  INFO 12640 --- [EduStream] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-04-19T01:36:33.877+04:00  INFO 12640 --- [EduStream] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-04-19T01:36:34.240+04:00  INFO 12640 --- [EduStream] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@26c1f3eb
-2026-04-19T01:36:34.243+04:00  INFO 12640 --- [EduStream] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-04-19T01:36:34.420+04:00  WARN 12640 --- [EduStream] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-04-19T01:36:34.482+04:00  INFO 12640 --- [EduStream] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/EduStream]
-	Database driver: PostgreSQL JDBC Driver
-	Database dialect: PostgreSQLDialect
-	Database version: 18.3
-	Default catalog/schema: EduStream/public
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-04-19T01:36:36.834+04:00  INFO 12640 --- [EduStream] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-04-19T01:36:37.096+04:00  INFO 12640 --- [EduStream] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-04-19T01:36:37.328+04:00  INFO 12640 --- [EduStream] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-04-19T01:36:38.350+04:00  WARN 12640 --- [EduStream] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-04-19T01:36:39.320+04:00 DEBUG 12640 --- [EduStream] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
-2026-04-19T01:36:39.418+04:00 DEBUG 12640 --- [EduStream] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
-2026-04-19T01:36:39.453+04:00 DEBUG 12640 --- [EduStream] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
-2026-04-19T01:36:39.544+04:00 DEBUG 12640 --- [EduStream] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2026-04-19T01:36:43.502+04:00  INFO 12640 --- [EduStream] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-04-19T01:36:43.554+04:00 DEBUG 12640 --- [EduStream] [main] o.s.d.r.l.RedisMessageListenerContainer  : Starting RedisMessageListenerContainer...
-2026-04-19T01:36:43.555+04:00 DEBUG 12640 --- [EduStream] [main] o.s.d.r.l.RedisMessageListenerContainer  : Postpone listening for Redis messages until actual listeners are added
-2026-04-19T01:36:43.562+04:00  INFO 12640 --- [EduStream] [main] com.ltc.edustream.EduStreamApplication   : Started EduStreamApplication in 16.532 seconds (process running for 20.088)
-2026-04-19T01:39:06.776+04:00  INFO 12640 --- [EduStream] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-04-19T01:39:06.777+04:00  INFO 12640 --- [EduStream] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-04-19T01:39:06.778+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2026-04-19T01:39:06.778+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2026-04-19T01:39:06.782+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7c1f435a
-2026-04-19T01:39:06.785+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7a62e096
-2026-04-19T01:39:06.788+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2026-04-19T01:39:06.788+04:00  INFO 12640 --- [EduStream] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
-2026-04-19T01:39:06.817+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html", parameters={}
-2026-04-19T01:39:06.849+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
-2026-04-19T01:39:06.886+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
-2026-04-19T01:39:06.896+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui.css", parameters={}
-2026-04-19T01:39:06.897+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
-2026-04-19T01:39:06.898+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.css", parameters={}
-2026-04-19T01:39:06.899+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
-2026-04-19T01:39:06.899+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
-2026-04-19T01:39:06.901+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
-2026-04-19T01:39:06.902+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
-2026-04-19T01:39:06.901+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
-2026-04-19T01:39:06.903+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
-2026-04-19T01:39:06.904+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
-2026-04-19T01:39:06.905+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
-2026-04-19T01:39:06.905+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
-2026-04-19T01:39:06.906+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
-2026-04-19T01:39:06.907+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
-2026-04-19T01:39:06.994+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-04-19T01:39:07.027+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
-2026-04-19T01:39:07.029+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
-2026-04-19T01:39:07.054+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
-2026-04-19T01:39:07.055+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8080/swagger-ui/oauth2-re (truncated)...]
-2026-04-19T01:39:07.093+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-04-19T01:39:07.101+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
-2026-04-19T01:39:07.102+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
-2026-04-19T01:39:07.660+04:00  INFO 12640 --- [EduStream] [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 540 ms
-2026-04-19T01:39:07.686+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
-2026-04-19T01:39:07.687+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [{7b226f70656e617069223a22332e302e31222c22696e666f223a7b227469746c65223a2245647553747265616d207379737 (truncated)...]
-2026-04-19T01:39:07.689+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-04-19T01:39:45.626+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/courses/create", parameters={}
-2026-04-19T01:39:45.627+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.edustream.controller.CourseController#create(CourseCreateRequest)
-2026-04-19T01:39:45.794+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CourseCreateRequest[title=IT, description=III Group, teacherName=Camel A.]]
-2026-04-19T01:39:46.023+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-2026-04-19T01:39:46.029+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [CourseResponse[id=16, title=IT, description=III Group, teacherName=Camel A., createdAt=2026-04-18T21 (truncated)...]
-2026-04-19T01:39:46.062+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
-2026-04-19T01:40:57.861+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : PUT "/api/courses/update/15", parameters={}
-2026-04-19T01:40:57.861+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.edustream.controller.CourseController#update(Long, CourseCreateRequest)
-2026-04-19T01:40:57.869+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CourseCreateRequest[title=Sport, description=Football, teacherName=Kevin B.]]
-2026-04-19T01:40:57.985+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-2026-04-19T01:40:57.986+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [CourseResponse[id=15, title=Sport, description=Football, teacherName=Kevin B., createdAt=2026-04-17T (truncated)...]
-2026-04-19T01:40:57.986+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 202 ACCEPTED
-2026-04-19T01:41:18.417+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/courses/14", parameters={}
-2026-04-19T01:41:18.417+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.edustream.controller.CourseController#getById(Long)
-2026-04-19T01:41:18.432+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-2026-04-19T01:41:18.432+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [CourseResponse[id=14, title=Math, description=I group, teacherName=James L., createdAt=2026-04-17T21 (truncated)...]
-2026-04-19T01:41:18.432+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 202 ACCEPTED
-2026-04-19T01:41:31.390+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/courses/15", parameters={}
-2026-04-19T01:41:31.390+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.edustream.controller.CourseController#getById(Long)
-2026-04-19T01:41:31.393+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-2026-04-19T01:41:31.393+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [CourseResponse[id=15, title=Sport, description=Football, teacherName=Kevin B., createdAt=2026-04-17T (truncated)...]
-2026-04-19T01:41:31.397+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 202 ACCEPTED
-2026-04-19T01:41:48.981+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/courses/teacher/Kevin%20B.", parameters={}
-2026-04-19T01:41:48.994+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.edustream.controller.CourseController#getByTeacher(String)
-2026-04-19T01:41:49.145+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-2026-04-19T01:41:49.146+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[CourseResponse[id=15, title=Sport, description=Football, teacherName=Kevin B., createdAt=2026-04-17 (truncated)...]
-2026-04-19T01:41:49.146+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-04-19T01:41:56.594+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/courses/teacher/Kevin%20A.", parameters={}
-2026-04-19T01:41:56.596+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.edustream.controller.CourseController#getByTeacher(String)
-2026-04-19T01:41:56.603+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-2026-04-19T01:41:56.603+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[]]
-2026-04-19T01:41:56.606+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-04-19T01:42:04.070+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/courses/teacher/Kevin%20B.", parameters={}
-2026-04-19T01:42:04.070+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.edustream.controller.CourseController#getByTeacher(String)
-2026-04-19T01:42:04.078+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-2026-04-19T01:42:04.078+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[CourseResponse[id=15, title=Sport, description=Football, teacherName=Kevin B., createdAt=2026-04-17 (truncated)...]
-2026-04-19T01:42:04.082+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-04-19T01:42:15.869+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/courses/all", parameters={}
-2026-04-19T01:42:15.869+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.edustream.controller.CourseController#getAll()
-2026-04-19T01:42:15.913+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-2026-04-19T01:42:15.913+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[CourseResponse[id=14, title=Math, description=I group, teacherName=James L., createdAt=2026-04-17T2 (truncated)...]
-2026-04-19T01:42:15.918+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-04-19T01:42:29.362+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : DELETE "/api/courses/delete/14", parameters={}
-2026-04-19T01:42:29.365+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.edustream.controller.CourseController#delete(Long)
-2026-04-19T01:42:29.432+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/yaml]
-2026-04-19T01:42:29.432+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Course deleted"]
-2026-04-19T01:42:29.435+04:00 DEBUG 12640 --- [EduStream] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 202 ACCEPTED
-2026-04-19T02:55:24.751+04:00 DEBUG 12640 --- [EduStream] [SpringApplicationShutdownHook] o.s.d.r.l.RedisMessageListenerContainer  : Stopped RedisMessageListenerContainer
-2026-04-19T02:55:24.753+04:00  INFO 12640 --- [EduStream] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-04-19T02:55:24.862+04:00  INFO 12640 --- [EduStream] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-04-19T02:55:24.883+04:00  INFO 12640 --- [EduStream] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-04-19T02:55:24.885+04:00  INFO 12640 --- [EduStream] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-04-19T02:55:24.891+04:00  INFO 12640 --- [EduStream] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-04-19T03:01:23.094+04:00  INFO 21620 --- [EduStream] [main] com.ltc.edustream.EduStreamApplication   : Starting EduStreamApplication using Java 17.0.18 with PID 21620 (C:\Users\Orkhan\IdeaProjects\EduStream\build\classes\java\main started by Orkhan in C:\Users\Orkhan\IdeaProjects\EduStream)
-2026-04-19T03:01:23.096+04:00  INFO 21620 --- [EduStream] [main] com.ltc.edustream.EduStreamApplication   : No active profile set, falling back to 1 default profile: "default"
-2026-04-19T03:01:23.981+04:00  INFO 21620 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2026-04-19T03:01:23.982+04:00  INFO 21620 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-04-19T03:01:24.066+04:00  INFO 21620 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 6 JPA repository interfaces.
-2026-04-19T03:01:24.076+04:00  INFO 21620 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2026-04-19T03:01:24.077+04:00  INFO 21620 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2026-04-19T03:01:24.087+04:00  INFO 21620 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.AnswerRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-04-19T03:01:24.087+04:00  INFO 21620 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.CourseRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-04-19T03:01:24.087+04:00  INFO 21620 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.ExamRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-04-19T03:01:24.087+04:00  INFO 21620 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.ExamSessionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-04-19T03:01:24.087+04:00  INFO 21620 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.LessonRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-04-19T03:01:24.088+04:00  INFO 21620 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.QuestionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-04-19T03:01:24.088+04:00  INFO 21620 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
-2026-04-19T03:01:24.295+04:00  INFO 21620 --- [EduStream] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2d51ada0-5304-375c-850e-f395de61a9fe
-2026-04-19T03:01:24.615+04:00  INFO 21620 --- [EduStream] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-04-19T03:01:24.621+04:00  INFO 21620 --- [EduStream] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-04-19T03:01:24.621+04:00  INFO 21620 --- [EduStream] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
-2026-04-19T03:01:24.661+04:00  INFO 21620 --- [EduStream] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1535 ms
-2026-04-19T03:01:24.790+04:00 DEBUG 21620 --- [EduStream] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2026-04-19T03:01:24.898+04:00  INFO 21620 --- [EduStream] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-04-19T03:01:24.928+04:00  INFO 21620 --- [EduStream] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
-2026-04-19T03:01:25.164+04:00  INFO 21620 --- [EduStream] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-04-19T03:01:25.181+04:00  INFO 21620 --- [EduStream] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-04-19T03:01:25.286+04:00  INFO 21620 --- [EduStream] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@663cc8c9
-2026-04-19T03:01:25.287+04:00  INFO 21620 --- [EduStream] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-04-19T03:01:25.309+04:00  WARN 21620 --- [EduStream] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-04-19T03:01:25.322+04:00  INFO 21620 --- [EduStream] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/EduStream]
-	Database driver: PostgreSQL JDBC Driver
-	Database dialect: PostgreSQLDialect
-	Database version: 18.3
-	Default catalog/schema: EduStream/public
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-04-19T03:01:25.909+04:00  INFO 21620 --- [EduStream] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-04-19T03:01:25.982+04:00  INFO 21620 --- [EduStream] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-04-19T03:01:26.061+04:00  INFO 21620 --- [EduStream] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-04-19T03:01:26.304+04:00  WARN 21620 --- [EduStream] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-04-19T03:01:26.456+04:00 DEBUG 21620 --- [EduStream] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 15 mappings in 'requestMappingHandlerMapping'
-2026-04-19T03:01:26.493+04:00 DEBUG 21620 --- [EduStream] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
-2026-04-19T03:01:26.516+04:00 DEBUG 21620 --- [EduStream] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
-2026-04-19T03:01:26.564+04:00 DEBUG 21620 --- [EduStream] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2026-04-19T03:01:27.728+04:00  INFO 21620 --- [EduStream] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2026-04-19T03:01:27.794+04:00  INFO 21620 --- [EduStream] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-04-19T03:01:27.836+04:00 DEBUG 21620 --- [EduStream] [main] o.s.d.r.l.RedisMessageListenerContainer  : Starting RedisMessageListenerContainer...
-2026-04-19T03:01:27.837+04:00 DEBUG 21620 --- [EduStream] [main] o.s.d.r.l.RedisMessageListenerContainer  : Postpone listening for Redis messages until actual listeners are added
-2026-04-19T03:01:27.847+04:00  INFO 21620 --- [EduStream] [main] com.ltc.edustream.EduStreamApplication   : Started EduStreamApplication in 5.149 seconds (process running for 5.668)
-2026-04-19T03:01:28.364+04:00  INFO 21620 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-04-19T03:01:28.365+04:00  INFO 21620 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-04-19T03:01:28.365+04:00 DEBUG 21620 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2026-04-19T03:01:28.365+04:00 DEBUG 21620 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2026-04-19T03:01:28.367+04:00 DEBUG 21620 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@37c5e2e6
-2026-04-19T03:01:28.367+04:00 DEBUG 21620 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@34ec33f4
-2026-04-19T03:01:28.367+04:00 DEBUG 21620 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2026-04-19T03:01:28.368+04:00  INFO 21620 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2026-04-19T03:01:29.789+04:00  WARN 21620 --- [EduStream] [RMI TCP Connection(4)-192.168.1.125] o.s.b.mail.health.MailHealthIndicator    : Mail health check failed
+2026-04-22T00:18:00.496+04:00  INFO 26576 --- [EduStream] [main] com.ltc.edustream.EduStreamApplication   : Starting EduStreamApplication using Java 17.0.18 with PID 26576 (Q:\IdeaProjects\EduStream\build\classes\java\main started by Orkhan in Q:\IdeaProjects\EduStream)
+2026-04-22T00:18:00.500+04:00  INFO 26576 --- [EduStream] [main] com.ltc.edustream.EduStreamApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-04-22T00:18:01.210+04:00  INFO 26576 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-22T00:18:01.211+04:00  INFO 26576 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-22T00:18:01.301+04:00  INFO 26576 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 6 JPA repository interfaces.
+2026-04-22T00:18:01.309+04:00  INFO 26576 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-22T00:18:01.309+04:00  INFO 26576 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-22T00:18:01.316+04:00  INFO 26576 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.AnswerRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-22T00:18:01.316+04:00  INFO 26576 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.CourseRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-22T00:18:01.316+04:00  INFO 26576 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.ExamRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-22T00:18:01.316+04:00  INFO 26576 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.ExamSessionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-22T00:18:01.316+04:00  INFO 26576 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.LessonRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-22T00:18:01.317+04:00  INFO 26576 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.QuestionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-22T00:18:01.317+04:00  INFO 26576 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2026-04-22T00:18:01.495+04:00  INFO 26576 --- [EduStream] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d61d4283-573e-36fe-a836-9262141c9672
+2026-04-22T00:18:01.885+04:00  INFO 26576 --- [EduStream] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-22T00:18:01.891+04:00  INFO 26576 --- [EduStream] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-22T00:18:01.891+04:00  INFO 26576 --- [EduStream] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-22T00:18:01.937+04:00  INFO 26576 --- [EduStream] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-22T00:18:01.937+04:00  INFO 26576 --- [EduStream] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1409 ms
+2026-04-22T00:18:02.072+04:00 DEBUG 26576 --- [EduStream] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2026-04-22T00:18:02.279+04:00  INFO 26576 --- [EduStream] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-22T00:18:02.303+04:00  INFO 26576 --- [EduStream] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-22T00:18:02.318+04:00  INFO 26576 --- [EduStream] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-22T00:18:02.430+04:00  INFO 26576 --- [EduStream] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-22T00:18:02.442+04:00  INFO 26576 --- [EduStream] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-22T00:18:02.536+04:00  INFO 26576 --- [EduStream] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1c09bb7a
+2026-04-22T00:18:02.537+04:00  INFO 26576 --- [EduStream] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-22T00:18:02.554+04:00  WARN 26576 --- [EduStream] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-22T00:18:03.146+04:00  INFO 26576 --- [EduStream] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-22T00:18:03.233+04:00  INFO 26576 --- [EduStream] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T00:18:03.506+04:00  WARN 26576 --- [EduStream] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'courseChannel' defined in class path resource [com/ltc/edustream/configuration/GrpcClientConfig.class]: Failed to instantiate [io.grpc.ManagedChannel]: Factory method 'courseChannel' threw exception with message: No functional channel service provider found. Try adding a dependency on the grpc-okhttp, grpc-netty, or grpc-netty-shaded artifact
+2026-04-22T00:18:03.507+04:00  INFO 26576 --- [EduStream] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T00:18:03.509+04:00  INFO 26576 --- [EduStream] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-22T00:18:03.512+04:00  INFO 26576 --- [EduStream] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-22T00:18:03.522+04:00  INFO 26576 --- [EduStream] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-04-22T00:18:03.532+04:00  INFO 26576 --- [EduStream] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
 
-jakarta.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. For more information, go to
-535 5.7.8  https://support.google.com/mail/?p=BadCredentials 38308e7fff4ca-38ecb4f5035sm14250581fa.4 - gsmtp
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-04-22T00:18:03.541+04:00 ERROR 26576 --- [EduStream] [main] o.s.boot.SpringApplication               : Application run failed
 
-	at org.eclipse.angus.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:954) ~[angus-mail-2.0.5.jar:na]
-	at org.eclipse.angus.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:865) ~[angus-mail-2.0.5.jar:na]
-	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:769) ~[angus-mail-2.0.5.jar:na]
-	at jakarta.mail.Service.connect(Service.java:345) ~[jakarta.mail-api-2.1.5.jar:na]
-	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:467) ~[spring-context-support-7.0.6.jar:7.0.6]
-	at org.springframework.mail.javamail.JavaMailSenderImpl.testConnection(JavaMailSenderImpl.java:347) ~[spring-context-support-7.0.6.jar:7.0.6]
-	at org.springframework.boot.mail.health.MailHealthIndicator.doHealthCheck(MailHealthIndicator.java:52) ~[spring-boot-mail-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.contributor.AbstractHealthIndicator.health(AbstractHealthIndicator.java:80) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.contributor.HealthIndicator.health(HealthIndicator.java:37) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.Contributor$Blocking.getDescriptor(Contributor.java:148) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.Contributor$Blocking.getDescriptor(Contributor.java:126) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.HealthEndpointSupport.getDescriptorAndLogIfSlow(HealthEndpointSupport.java:172) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.HealthEndpointSupport.getDescriptor(HealthEndpointSupport.java:145) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.HealthEndpointSupport.getAggregateDescriptor(HealthEndpointSupport.java:157) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.HealthEndpointSupport.getDescriptor(HealthEndpointSupport.java:141) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.HealthEndpointSupport.getResult(HealthEndpointSupport.java:110) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.HealthEndpointSupport.getResult(HealthEndpointSupport.java:82) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.HealthEndpoint.health(HealthEndpoint.java:80) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.HealthEndpoint.health(HealthEndpoint.java:70) ~[spring-boot-health-4.0.5.jar:4.0.5]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'courseChannel' defined in class path resource [com/ltc/edustream/configuration/GrpcClientConfig.class]: Failed to instantiate [io.grpc.ManagedChannel]: Factory method 'courseChannel' threw exception with message: No functional channel service provider found. Try adding a dependency on the grpc-okhttp, grpc-netty, or grpc-netty-shaded artifact
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.5.jar:3.2.5]
+	at com.ltc.edustream.EduStreamApplication.main(EduStreamApplication.java:12) ~[main/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [io.grpc.ManagedChannel]: Factory method 'courseChannel' threw exception with message: No functional channel service provider found. Try adding a dependency on the grpc-okhttp, grpc-netty, or grpc-netty-shaded artifact
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 19 common frames omitted
+Caused by: io.grpc.ManagedChannelProvider$ProviderNotFoundException: No functional channel service provider found. Try adding a dependency on the grpc-okhttp, grpc-netty, or grpc-netty-shaded artifact
+	at io.grpc.ManagedChannelProvider.provider(ManagedChannelProvider.java:45) ~[grpc-api-1.77.1.jar:1.77.1]
+	at io.grpc.ManagedChannelBuilder.forAddress(ManagedChannelBuilder.java:44) ~[grpc-api-1.77.1.jar:1.77.1]
+	at com.ltc.edustream.configuration.GrpcClientConfig.courseChannel(GrpcClientConfig.java:21) ~[main/:na]
+	at com.ltc.edustream.configuration.GrpcClientConfig$$SpringCGLIB$$0.CGLIB$courseChannel$1(<generated>) ~[main/:na]
+	at com.ltc.edustream.configuration.GrpcClientConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[main/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-6.1.6.jar:6.1.6]
+	at com.ltc.edustream.configuration.GrpcClientConfig$$SpringCGLIB$$0.courseChannel(<generated>) ~[main/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
-	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281) ~[spring-core-7.0.6.jar:7.0.6]
-	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:76) ~[spring-boot-actuator-4.0.5.jar:4.0.5]
-	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:62) ~[spring-boot-actuator-4.0.5.jar:4.0.5]
-	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:127) ~[spring-boot-actuator-4.0.5.jar:4.0.5]
-	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:99) ~[spring-boot-actuator-4.0.5.jar:4.0.5]
-	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814) ~[na:na]
-	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802) ~[na:na]
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472) ~[na:na]
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310) ~[na:na]
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405) ~[na:na]
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[na:na]
-	at java.base/jdk.internal.reflect.GeneratedMethodAccessor39.invoke(Unknown Source) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
-	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360) ~[na:na]
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:na]
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:na]
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712) ~[na:na]
-	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:na]
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587) ~[na:na]
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828) ~[na:na]
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705) ~[na:na]
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399) ~[na:na]
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 20 common frames omitted
 
-2026-04-19T03:01:30.140+04:00  WARN 21620 --- [EduStream] [boundedElastic-1] b.d.r.h.DataRedisReactiveHealthIndicator : Redis health check failed
-
-org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1868) ~[spring-data-redis-4.0.4.jar:4.0.4]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1799) ~[spring-data-redis-4.0.4.jar:4.0.4]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1596) ~[spring-data-redis-4.0.4.jar:4.0.4]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.lambda$getConnection$0(LettuceConnectionFactory.java:1576) ~[spring-data-redis-4.0.4.jar:4.0.4]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.doInLock(LettuceConnectionFactory.java:1537) ~[spring-data-redis-4.0.4.jar:4.0.4]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1573) ~[spring-data-redis-4.0.4.jar:4.0.4]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedReactiveConnection(LettuceConnectionFactory.java:1281) ~[spring-data-redis-4.0.4.jar:4.0.4]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:1151) ~[spring-data-redis-4.0.4.jar:4.0.4]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:120) ~[spring-data-redis-4.0.4.jar:4.0.4]
-	at reactor.core.publisher.MonoSupplier.call(MonoSupplier.java:63) ~[reactor-core-3.8.4.jar:3.8.4]
-	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:228) ~[reactor-core-3.8.4.jar:3.8.4]
-	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:72) ~[reactor-core-3.8.4.jar:3.8.4]
-	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28) ~[reactor-core-3.8.4.jar:3.8.4]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
-Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to localhost/<unresolved>:6379
-	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:63) ~[lettuce-core-6.8.2.RELEASE.jar:6.8.2.RELEASE/34f8700]
-	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:41) ~[lettuce-core-6.8.2.RELEASE.jar:6.8.2.RELEASE/34f8700]
-	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:352) ~[lettuce-core-6.8.2.RELEASE.jar:6.8.2.RELEASE/34f8700]
-	at io.lettuce.core.RedisClient.connect(RedisClient.java:220) ~[lettuce-core-6.8.2.RELEASE.jar:6.8.2.RELEASE/34f8700]
-	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:113) ~[spring-data-redis-4.0.4.jar:4.0.4]
-	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
-	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:113) ~[spring-data-redis-4.0.4.jar:4.0.4]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1797) ~[spring-data-redis-4.0.4.jar:4.0.4]
-	... 16 common frames omitted
-Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: getsockopt: localhost/127.0.0.1:6379
-Caused by: java.net.ConnectException: Connection refused: getsockopt
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:684) ~[na:na]
-	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[na:na]
-	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:384) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:432) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:388) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:596) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:571) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:512) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:484) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1195) ~[netty-common-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.2.12.Final.jar:4.2.12.Final]
-	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
-
-2026-04-19T03:05:20.506+04:00 DEBUG 21620 --- [EduStream] [SpringApplicationShutdownHook] o.s.d.r.l.RedisMessageListenerContainer  : Stopped RedisMessageListenerContainer
-2026-04-19T03:05:20.507+04:00  INFO 21620 --- [EduStream] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-04-19T03:05:20.720+04:00  INFO 21620 --- [EduStream] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-04-19T03:05:20.818+04:00  INFO 21620 --- [EduStream] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-04-19T03:05:20.822+04:00  INFO 21620 --- [EduStream] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-04-19T03:05:20.831+04:00  INFO 21620 --- [EduStream] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-04-19T03:05:24.332+04:00  INFO 12036 --- [EduStream] [main] com.ltc.edustream.EduStreamApplication   : Starting EduStreamApplication using Java 17.0.18 with PID 12036 (C:\Users\Orkhan\IdeaProjects\EduStream\build\classes\java\main started by Orkhan in C:\Users\Orkhan\IdeaProjects\EduStream)
-2026-04-19T03:05:24.335+04:00  INFO 12036 --- [EduStream] [main] com.ltc.edustream.EduStreamApplication   : No active profile set, falling back to 1 default profile: "default"
-2026-04-19T03:05:25.061+04:00  INFO 12036 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2026-04-19T03:05:25.062+04:00  INFO 12036 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-04-19T03:05:25.149+04:00  INFO 12036 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 6 JPA repository interfaces.
-2026-04-19T03:05:25.158+04:00  INFO 12036 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2026-04-19T03:05:25.159+04:00  INFO 12036 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2026-04-19T03:05:25.170+04:00  INFO 12036 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.AnswerRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-04-19T03:05:25.170+04:00  INFO 12036 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.CourseRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-04-19T03:05:25.170+04:00  INFO 12036 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.ExamRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-04-19T03:05:25.170+04:00  INFO 12036 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.ExamSessionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-04-19T03:05:25.171+04:00  INFO 12036 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.LessonRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-04-19T03:05:25.171+04:00  INFO 12036 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.QuestionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-04-19T03:05:25.171+04:00  INFO 12036 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
-2026-04-19T03:05:25.386+04:00  INFO 12036 --- [EduStream] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2d51ada0-5304-375c-850e-f395de61a9fe
-2026-04-19T03:05:25.724+04:00  INFO 12036 --- [EduStream] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-04-19T03:05:25.730+04:00  INFO 12036 --- [EduStream] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-04-19T03:05:25.730+04:00  INFO 12036 --- [EduStream] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
-2026-04-19T03:05:25.776+04:00  INFO 12036 --- [EduStream] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1416 ms
-2026-04-19T03:05:25.895+04:00 DEBUG 12036 --- [EduStream] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2026-04-19T03:05:25.997+04:00  INFO 12036 --- [EduStream] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-04-19T03:05:26.032+04:00  INFO 12036 --- [EduStream] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
-2026-04-19T03:05:26.272+04:00  INFO 12036 --- [EduStream] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-04-19T03:05:26.291+04:00  INFO 12036 --- [EduStream] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-04-19T03:05:26.383+04:00  INFO 12036 --- [EduStream] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@164cad52
-2026-04-19T03:05:26.385+04:00  INFO 12036 --- [EduStream] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-04-19T03:05:26.406+04:00  WARN 12036 --- [EduStream] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-04-19T03:05:26.420+04:00  INFO 12036 --- [EduStream] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/EduStream]
-	Database driver: PostgreSQL JDBC Driver
-	Database dialect: PostgreSQLDialect
-	Database version: 18.3
-	Default catalog/schema: EduStream/public
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-04-19T03:05:27.026+04:00  INFO 12036 --- [EduStream] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-04-19T03:05:27.088+04:00  INFO 12036 --- [EduStream] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-04-19T03:05:27.163+04:00  INFO 12036 --- [EduStream] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-04-19T03:05:27.380+04:00  WARN 12036 --- [EduStream] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-04-19T03:05:27.545+04:00 DEBUG 12036 --- [EduStream] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 15 mappings in 'requestMappingHandlerMapping'
-2026-04-19T03:05:27.576+04:00 DEBUG 12036 --- [EduStream] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
-2026-04-19T03:05:27.598+04:00 DEBUG 12036 --- [EduStream] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
-2026-04-19T03:05:27.639+04:00 DEBUG 12036 --- [EduStream] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2026-04-19T03:05:28.886+04:00  INFO 12036 --- [EduStream] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2026-04-19T03:05:28.951+04:00  INFO 12036 --- [EduStream] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-04-19T03:05:28.991+04:00 DEBUG 12036 --- [EduStream] [main] o.s.d.r.l.RedisMessageListenerContainer  : Starting RedisMessageListenerContainer...
-2026-04-19T03:05:28.993+04:00 DEBUG 12036 --- [EduStream] [main] o.s.d.r.l.RedisMessageListenerContainer  : Postpone listening for Redis messages until actual listeners are added
-2026-04-19T03:05:29.000+04:00  INFO 12036 --- [EduStream] [main] com.ltc.edustream.EduStreamApplication   : Started EduStreamApplication in 5.069 seconds (process running for 5.517)
-2026-04-19T03:05:29.170+04:00  INFO 12036 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-04-19T03:05:29.171+04:00  INFO 12036 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-04-19T03:05:29.171+04:00 DEBUG 12036 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2026-04-19T03:05:29.171+04:00 DEBUG 12036 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2026-04-19T03:05:29.173+04:00 DEBUG 12036 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@37c5e2e6
-2026-04-19T03:05:29.174+04:00 DEBUG 12036 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@34ec33f4
-2026-04-19T03:05:29.174+04:00 DEBUG 12036 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2026-04-19T03:05:29.174+04:00  INFO 12036 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2026-04-19T03:05:30.431+04:00  WARN 12036 --- [EduStream] [RMI TCP Connection(3)-192.168.1.125] o.s.b.mail.health.MailHealthIndicator    : Mail health check failed
-
-jakarta.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. For more information, go to
-535 5.7.8  https://support.google.com/mail/?p=BadCredentials 2adb3069b0e04-5a4187e1126sm1687393e87.39 - gsmtp
-
-	at org.eclipse.angus.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:954) ~[angus-mail-2.0.5.jar:na]
-	at org.eclipse.angus.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:865) ~[angus-mail-2.0.5.jar:na]
-	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:769) ~[angus-mail-2.0.5.jar:na]
-	at jakarta.mail.Service.connect(Service.java:345) ~[jakarta.mail-api-2.1.5.jar:na]
-	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:467) ~[spring-context-support-7.0.6.jar:7.0.6]
-	at org.springframework.mail.javamail.JavaMailSenderImpl.testConnection(JavaMailSenderImpl.java:347) ~[spring-context-support-7.0.6.jar:7.0.6]
-	at org.springframework.boot.mail.health.MailHealthIndicator.doHealthCheck(MailHealthIndicator.java:52) ~[spring-boot-mail-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.contributor.AbstractHealthIndicator.health(AbstractHealthIndicator.java:80) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.contributor.HealthIndicator.health(HealthIndicator.java:37) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.Contributor$Blocking.getDescriptor(Contributor.java:148) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.Contributor$Blocking.getDescriptor(Contributor.java:126) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.HealthEndpointSupport.getDescriptorAndLogIfSlow(HealthEndpointSupport.java:172) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.HealthEndpointSupport.getDescriptor(HealthEndpointSupport.java:145) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.HealthEndpointSupport.getAggregateDescriptor(HealthEndpointSupport.java:157) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.HealthEndpointSupport.getDescriptor(HealthEndpointSupport.java:141) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.HealthEndpointSupport.getResult(HealthEndpointSupport.java:110) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.HealthEndpointSupport.getResult(HealthEndpointSupport.java:82) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.HealthEndpoint.health(HealthEndpoint.java:80) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.HealthEndpoint.health(HealthEndpoint.java:70) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
-	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281) ~[spring-core-7.0.6.jar:7.0.6]
-	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:76) ~[spring-boot-actuator-4.0.5.jar:4.0.5]
-	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:62) ~[spring-boot-actuator-4.0.5.jar:4.0.5]
-	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:127) ~[spring-boot-actuator-4.0.5.jar:4.0.5]
-	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:99) ~[spring-boot-actuator-4.0.5.jar:4.0.5]
-	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814) ~[na:na]
-	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802) ~[na:na]
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472) ~[na:na]
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310) ~[na:na]
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405) ~[na:na]
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[na:na]
-	at java.base/jdk.internal.reflect.GeneratedMethodAccessor39.invoke(Unknown Source) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
-	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360) ~[na:na]
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:na]
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:na]
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712) ~[na:na]
-	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:na]
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587) ~[na:na]
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828) ~[na:na]
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705) ~[na:na]
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399) ~[na:na]
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
-
-2026-04-19T03:05:30.659+04:00  WARN 12036 --- [EduStream] [boundedElastic-1] b.d.r.h.DataRedisReactiveHealthIndicator : Redis health check failed
-
-org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1868) ~[spring-data-redis-4.0.4.jar:4.0.4]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1799) ~[spring-data-redis-4.0.4.jar:4.0.4]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1596) ~[spring-data-redis-4.0.4.jar:4.0.4]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.lambda$getConnection$0(LettuceConnectionFactory.java:1576) ~[spring-data-redis-4.0.4.jar:4.0.4]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.doInLock(LettuceConnectionFactory.java:1537) ~[spring-data-redis-4.0.4.jar:4.0.4]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1573) ~[spring-data-redis-4.0.4.jar:4.0.4]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedReactiveConnection(LettuceConnectionFactory.java:1281) ~[spring-data-redis-4.0.4.jar:4.0.4]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:1151) ~[spring-data-redis-4.0.4.jar:4.0.4]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:120) ~[spring-data-redis-4.0.4.jar:4.0.4]
-	at reactor.core.publisher.MonoSupplier.call(MonoSupplier.java:63) ~[reactor-core-3.8.4.jar:3.8.4]
-	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:228) ~[reactor-core-3.8.4.jar:3.8.4]
-	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:72) ~[reactor-core-3.8.4.jar:3.8.4]
-	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28) ~[reactor-core-3.8.4.jar:3.8.4]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
-Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to localhost/<unresolved>:6379
-	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:63) ~[lettuce-core-6.8.2.RELEASE.jar:6.8.2.RELEASE/34f8700]
-	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:41) ~[lettuce-core-6.8.2.RELEASE.jar:6.8.2.RELEASE/34f8700]
-	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:352) ~[lettuce-core-6.8.2.RELEASE.jar:6.8.2.RELEASE/34f8700]
-	at io.lettuce.core.RedisClient.connect(RedisClient.java:220) ~[lettuce-core-6.8.2.RELEASE.jar:6.8.2.RELEASE/34f8700]
-	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:113) ~[spring-data-redis-4.0.4.jar:4.0.4]
-	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
-	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:113) ~[spring-data-redis-4.0.4.jar:4.0.4]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1797) ~[spring-data-redis-4.0.4.jar:4.0.4]
-	... 16 common frames omitted
-Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: getsockopt: localhost/127.0.0.1:6379
-Caused by: java.net.ConnectException: Connection refused: getsockopt
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:684) ~[na:na]
-	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[na:na]
-	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:384) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:432) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:388) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:596) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:571) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:512) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:484) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196) ~[netty-transport-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1195) ~[netty-common-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.2.12.Final.jar:4.2.12.Final]
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.2.12.Final.jar:4.2.12.Final]
-	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
-
-2026-04-19T03:11:20.306+04:00 DEBUG 12036 --- [EduStream] [SpringApplicationShutdownHook] o.s.d.r.l.RedisMessageListenerContainer  : Stopped RedisMessageListenerContainer
-2026-04-19T03:11:20.308+04:00  INFO 12036 --- [EduStream] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-04-19T03:11:20.413+04:00  INFO 12036 --- [EduStream] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-04-19T03:11:20.429+04:00  INFO 12036 --- [EduStream] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-04-19T03:11:20.431+04:00  INFO 12036 --- [EduStream] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-04-19T03:11:20.433+04:00  INFO 12036 --- [EduStream] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-04-19T03:11:22.781+04:00  INFO 28808 --- [EduStream] [main] com.ltc.edustream.EduStreamApplication   : Starting EduStreamApplication using Java 17.0.18 with PID 28808 (C:\Users\Orkhan\IdeaProjects\EduStream\build\classes\java\main started by Orkhan in C:\Users\Orkhan\IdeaProjects\EduStream)
-2026-04-19T03:11:22.783+04:00  INFO 28808 --- [EduStream] [main] com.ltc.edustream.EduStreamApplication   : No active profile set, falling back to 1 default profile: "default"
-2026-04-19T03:11:23.547+04:00  INFO 28808 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2026-04-19T03:11:23.548+04:00  INFO 28808 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-04-19T03:11:23.639+04:00  INFO 28808 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 6 JPA repository interfaces.
-2026-04-19T03:11:23.652+04:00  INFO 28808 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2026-04-19T03:11:23.653+04:00  INFO 28808 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2026-04-19T03:11:23.664+04:00  INFO 28808 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.AnswerRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-04-19T03:11:23.665+04:00  INFO 28808 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.CourseRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-04-19T03:11:23.665+04:00  INFO 28808 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.ExamRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-04-19T03:11:23.665+04:00  INFO 28808 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.ExamSessionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-04-19T03:11:23.665+04:00  INFO 28808 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.LessonRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-04-19T03:11:23.665+04:00  INFO 28808 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.QuestionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2026-04-19T03:11:23.665+04:00  INFO 28808 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
-2026-04-19T03:11:23.915+04:00  INFO 28808 --- [EduStream] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2d51ada0-5304-375c-850e-f395de61a9fe
-2026-04-19T03:11:24.304+04:00  INFO 28808 --- [EduStream] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-04-19T03:11:24.311+04:00  INFO 28808 --- [EduStream] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-04-19T03:11:24.311+04:00  INFO 28808 --- [EduStream] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
-2026-04-19T03:11:24.353+04:00  INFO 28808 --- [EduStream] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1546 ms
-2026-04-19T03:11:24.487+04:00 DEBUG 28808 --- [EduStream] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2026-04-19T03:11:24.601+04:00  INFO 28808 --- [EduStream] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-04-19T03:11:24.631+04:00  INFO 28808 --- [EduStream] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
-2026-04-19T03:11:24.880+04:00  INFO 28808 --- [EduStream] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-04-19T03:11:24.902+04:00  INFO 28808 --- [EduStream] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-04-19T03:11:24.996+04:00  INFO 28808 --- [EduStream] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5b977aaa
-2026-04-19T03:11:24.998+04:00  INFO 28808 --- [EduStream] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-04-19T03:11:25.022+04:00  WARN 28808 --- [EduStream] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-04-19T03:11:25.037+04:00  INFO 28808 --- [EduStream] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/EduStream]
-	Database driver: PostgreSQL JDBC Driver
-	Database dialect: PostgreSQLDialect
-	Database version: 18.3
-	Default catalog/schema: EduStream/public
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-04-19T03:11:25.676+04:00  INFO 28808 --- [EduStream] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-04-19T03:11:25.736+04:00  INFO 28808 --- [EduStream] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-04-19T03:11:25.818+04:00  INFO 28808 --- [EduStream] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-04-19T03:11:26.065+04:00  WARN 28808 --- [EduStream] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-04-19T03:11:26.234+04:00 DEBUG 28808 --- [EduStream] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 15 mappings in 'requestMappingHandlerMapping'
-2026-04-19T03:11:26.263+04:00 DEBUG 28808 --- [EduStream] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
-2026-04-19T03:11:26.290+04:00 DEBUG 28808 --- [EduStream] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
-2026-04-19T03:11:26.335+04:00 DEBUG 28808 --- [EduStream] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2026-04-19T03:11:27.563+04:00  INFO 28808 --- [EduStream] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2026-04-19T03:11:27.631+04:00  INFO 28808 --- [EduStream] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-04-19T03:11:27.687+04:00 DEBUG 28808 --- [EduStream] [main] o.s.d.r.l.RedisMessageListenerContainer  : Starting RedisMessageListenerContainer...
-2026-04-19T03:11:27.688+04:00 DEBUG 28808 --- [EduStream] [main] o.s.d.r.l.RedisMessageListenerContainer  : Postpone listening for Redis messages until actual listeners are added
-2026-04-19T03:11:27.697+04:00  INFO 28808 --- [EduStream] [main] com.ltc.edustream.EduStreamApplication   : Started EduStreamApplication in 5.257 seconds (process running for 5.714)
-2026-04-19T03:11:28.141+04:00  INFO 28808 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-04-19T03:11:28.141+04:00  INFO 28808 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-04-19T03:11:28.142+04:00 DEBUG 28808 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2026-04-19T03:11:28.142+04:00 DEBUG 28808 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2026-04-19T03:11:28.144+04:00 DEBUG 28808 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@27796482
-2026-04-19T03:11:28.145+04:00 DEBUG 28808 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2620d0dc
-2026-04-19T03:11:28.145+04:00 DEBUG 28808 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2026-04-19T03:11:28.145+04:00  INFO 28808 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2026-04-19T03:11:29.445+04:00  WARN 28808 --- [EduStream] [RMI TCP Connection(4)-192.168.1.125] o.s.b.mail.health.MailHealthIndicator    : Mail health check failed
-
-jakarta.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. For more information, go to
-535 5.7.8  https://support.google.com/mail/?p=BadCredentials 2adb3069b0e04-5a4185ad0fdsm1725314e87.13 - gsmtp
-
-	at org.eclipse.angus.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:954) ~[angus-mail-2.0.5.jar:na]
-	at org.eclipse.angus.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:865) ~[angus-mail-2.0.5.jar:na]
-	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:769) ~[angus-mail-2.0.5.jar:na]
-	at jakarta.mail.Service.connect(Service.java:345) ~[jakarta.mail-api-2.1.5.jar:na]
-	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:467) ~[spring-context-support-7.0.6.jar:7.0.6]
-	at org.springframework.mail.javamail.JavaMailSenderImpl.testConnection(JavaMailSenderImpl.java:347) ~[spring-context-support-7.0.6.jar:7.0.6]
-	at org.springframework.boot.mail.health.MailHealthIndicator.doHealthCheck(MailHealthIndicator.java:52) ~[spring-boot-mail-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.contributor.AbstractHealthIndicator.health(AbstractHealthIndicator.java:80) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.contributor.HealthIndicator.health(HealthIndicator.java:37) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.Contributor$Blocking.getDescriptor(Contributor.java:148) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.Contributor$Blocking.getDescriptor(Contributor.java:126) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.HealthEndpointSupport.getDescriptorAndLogIfSlow(HealthEndpointSupport.java:172) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.HealthEndpointSupport.getDescriptor(HealthEndpointSupport.java:145) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.HealthEndpointSupport.getAggregateDescriptor(HealthEndpointSupport.java:157) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.HealthEndpointSupport.getDescriptor(HealthEndpointSupport.java:141) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.HealthEndpointSupport.getResult(HealthEndpointSupport.java:110) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.HealthEndpointSupport.getResult(HealthEndpointSupport.java:82) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.HealthEndpoint.health(HealthEndpoint.java:80) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at org.springframework.boot.health.actuate.endpoint.HealthEndpoint.health(HealthEndpoint.java:70) ~[spring-boot-health-4.0.5.jar:4.0.5]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
-	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281) ~[spring-core-7.0.6.jar:7.0.6]
-	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:76) ~[spring-boot-actuator-4.0.5.jar:4.0.5]
-	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:62) ~[spring-boot-actuator-4.0.5.jar:4.0.5]
-	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:127) ~[spring-boot-actuator-4.0.5.jar:4.0.5]
-	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:99) ~[spring-boot-actuator-4.0.5.jar:4.0.5]
-	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814) ~[na:na]
-	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802) ~[na:na]
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472) ~[na:na]
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310) ~[na:na]
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405) ~[na:na]
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[na:na]
-	at java.base/jdk.internal.reflect.GeneratedMethodAccessor39.invoke(Unknown Source) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
-	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360) ~[na:na]
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:na]
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:na]
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712) ~[na:na]
-	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:na]
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587) ~[na:na]
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828) ~[na:na]
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705) ~[na:na]
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399) ~[na:na]
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
-
-2026-04-19T03:12:25.985+04:00 DEBUG 28808 --- [EduStream] [SpringApplicationShutdownHook] o.s.d.r.l.RedisMessageListenerContainer  : Stopped RedisMessageListenerContainer
-2026-04-19T03:12:25.988+04:00  INFO 28808 --- [EduStream] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-04-19T03:12:26.150+04:00  INFO 28808 --- [EduStream] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-04-19T03:12:26.164+04:00  INFO 28808 --- [EduStream] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-04-19T03:12:26.165+04:00  INFO 28808 --- [EduStream] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-04-19T03:12:26.169+04:00  INFO 28808 --- [EduStream] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-22T00:30:27.029+04:00  INFO 24616 --- [EduStream] [main] com.ltc.edustream.EduStreamApplication   : Starting EduStreamApplication using Java 17.0.18 with PID 24616 (Q:\IdeaProjects\EduStream\build\classes\java\main started by Orkhan in Q:\IdeaProjects\EduStream)
+2026-04-22T00:30:27.032+04:00  INFO 24616 --- [EduStream] [main] com.ltc.edustream.EduStreamApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-04-22T00:30:27.707+04:00  INFO 24616 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-22T00:30:27.708+04:00  INFO 24616 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-22T00:30:27.780+04:00  INFO 24616 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 6 JPA repository interfaces.
+2026-04-22T00:30:27.793+04:00  INFO 24616 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-22T00:30:27.794+04:00  INFO 24616 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-22T00:30:27.804+04:00  INFO 24616 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.AnswerRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-22T00:30:27.805+04:00  INFO 24616 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.CourseRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-22T00:30:27.805+04:00  INFO 24616 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.ExamRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-22T00:30:27.805+04:00  INFO 24616 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.ExamSessionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-22T00:30:27.805+04:00  INFO 24616 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.LessonRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-22T00:30:27.805+04:00  INFO 24616 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.QuestionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-22T00:30:27.805+04:00  INFO 24616 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2026-04-22T00:30:27.989+04:00  INFO 24616 --- [EduStream] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=33ebe751-5e27-3841-8e4c-63ebacf8213e
+2026-04-22T00:30:28.335+04:00  INFO 24616 --- [EduStream] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-22T00:30:28.340+04:00  INFO 24616 --- [EduStream] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-22T00:30:28.341+04:00  INFO 24616 --- [EduStream] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-22T00:30:28.422+04:00  INFO 24616 --- [EduStream] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-22T00:30:28.423+04:00  INFO 24616 --- [EduStream] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1354 ms
+2026-04-22T00:30:28.551+04:00 DEBUG 24616 --- [EduStream] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2026-04-22T00:30:28.769+04:00  INFO 24616 --- [EduStream] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-22T00:30:28.797+04:00  INFO 24616 --- [EduStream] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-22T00:30:28.816+04:00  INFO 24616 --- [EduStream] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-22T00:30:28.925+04:00  INFO 24616 --- [EduStream] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-22T00:30:28.939+04:00  INFO 24616 --- [EduStream] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-22T00:30:29.033+04:00  INFO 24616 --- [EduStream] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5114c8a1
+2026-04-22T00:30:29.034+04:00  INFO 24616 --- [EduStream] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-22T00:30:29.052+04:00  WARN 24616 --- [EduStream] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-22T00:30:29.615+04:00  INFO 24616 --- [EduStream] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-22T00:30:29.711+04:00  INFO 24616 --- [EduStream] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T00:30:30.096+04:00  WARN 24616 --- [EduStream] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-22T00:30:30.188+04:00 DEBUG 24616 --- [EduStream] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 15 mappings in 'requestMappingHandlerMapping'
+2026-04-22T00:30:30.426+04:00  INFO 24616 --- [EduStream] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-22T00:30:30.673+04:00  INFO 24616 --- [EduStream] [main] efaultSchemaResourceGraphQlSourceBuilder : Loaded 1 resource(s) in the GraphQL schema.
+2026-04-22T00:30:30.771+04:00  INFO 24616 --- [EduStream] [main] o.s.b.a.g.GraphQlAutoConfiguration       : GraphQL schema inspection:
+	Unmapped fields: {}
+	Unmapped registrations: {}
+	Skipped types: []
+2026-04-22T00:30:30.783+04:00  INFO 24616 --- [EduStream] [main] s.b.a.g.s.GraphQlWebMvcAutoConfiguration : GraphQL endpoint HTTP POST /graphql
+2026-04-22T00:30:30.790+04:00 DEBUG 24616 --- [EduStream] [main] o.s.w.s.f.support.RouterFunctionMapping  : 1 RouterFunction(s) in 'routerFunctionMapping'
+2026-04-22T00:30:30.799+04:00 DEBUG 24616 --- [EduStream] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2026-04-22T00:30:30.820+04:00 DEBUG 24616 --- [EduStream] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-04-22T00:30:30.845+04:00 DEBUG 24616 --- [EduStream] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-04-22T00:30:31.462+04:00 DEBUG 24616 --- [EduStream] [main] o.s.d.r.l.RedisMessageListenerContainer  : Starting RedisMessageListenerContainer...
+2026-04-22T00:30:31.463+04:00 DEBUG 24616 --- [EduStream] [main] o.s.d.r.l.RedisMessageListenerContainer  : Postpone listening for Redis messages until actual listeners are added
+2026-04-22T00:30:31.613+04:00  INFO 24616 --- [EduStream] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-04-22T00:30:31.675+04:00  INFO 24616 --- [EduStream] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-22T00:30:31.758+04:00  INFO 24616 --- [EduStream] [main] com.ltc.edustream.EduStreamApplication   : Started EduStreamApplication in 5.209 seconds (process running for 5.643)
+2026-04-22T00:30:32.258+04:00  INFO 24616 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-22T00:30:32.259+04:00  INFO 24616 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-22T00:30:32.259+04:00 DEBUG 24616 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-04-22T00:30:32.259+04:00 DEBUG 24616 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-04-22T00:30:32.259+04:00 DEBUG 24616 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2026-04-22T00:30:32.262+04:00 DEBUG 24616 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@c9ebdb
+2026-04-22T00:30:32.262+04:00 DEBUG 24616 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2258ca14
+2026-04-22T00:30:32.263+04:00 DEBUG 24616 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-04-22T00:30:32.263+04:00  INFO 24616 --- [EduStream] [RMI TCP Connection(2)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-04-22T00:30:56.550+04:00 DEBUG 24616 --- [EduStream] [SpringApplicationShutdownHook] o.s.d.r.l.RedisMessageListenerContainer  : Stopped RedisMessageListenerContainer
+2026-04-22T00:30:56.553+04:00  INFO 24616 --- [EduStream] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T00:30:56.554+04:00  INFO 24616 --- [EduStream] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-22T00:30:56.556+04:00  INFO 24616 --- [EduStream] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-22T00:30:58.625+04:00  INFO 28388 --- [EduStream] [main] com.ltc.edustream.EduStreamApplication   : Starting EduStreamApplication using Java 17.0.18 with PID 28388 (Q:\IdeaProjects\EduStream\build\classes\java\main started by Orkhan in Q:\IdeaProjects\EduStream)
+2026-04-22T00:30:58.625+04:00  INFO 28388 --- [EduStream] [main] com.ltc.edustream.EduStreamApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-04-22T00:30:59.343+04:00  INFO 28388 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-22T00:30:59.344+04:00  INFO 28388 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-22T00:30:59.430+04:00  INFO 28388 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 6 JPA repository interfaces.
+2026-04-22T00:30:59.441+04:00  INFO 28388 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-22T00:30:59.442+04:00  INFO 28388 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-22T00:30:59.451+04:00  INFO 28388 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.AnswerRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-22T00:30:59.451+04:00  INFO 28388 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.CourseRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-22T00:30:59.451+04:00  INFO 28388 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.ExamRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-22T00:30:59.451+04:00  INFO 28388 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.ExamSessionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-22T00:30:59.452+04:00  INFO 28388 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.LessonRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-22T00:30:59.452+04:00  INFO 28388 --- [EduStream] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ltc.edustream.repository.QuestionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-22T00:30:59.452+04:00  INFO 28388 --- [EduStream] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2026-04-22T00:30:59.636+04:00  INFO 28388 --- [EduStream] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=33ebe751-5e27-3841-8e4c-63ebacf8213e
+2026-04-22T00:31:00.033+04:00  INFO 28388 --- [EduStream] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-22T00:31:00.039+04:00  INFO 28388 --- [EduStream] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-22T00:31:00.039+04:00  INFO 28388 --- [EduStream] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-22T00:31:00.089+04:00  INFO 28388 --- [EduStream] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-22T00:31:00.089+04:00  INFO 28388 --- [EduStream] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1437 ms
+2026-04-22T00:31:00.227+04:00 DEBUG 28388 --- [EduStream] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2026-04-22T00:31:00.442+04:00  INFO 28388 --- [EduStream] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-22T00:31:00.470+04:00  INFO 28388 --- [EduStream] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-22T00:31:00.487+04:00  INFO 28388 --- [EduStream] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-22T00:31:00.598+04:00  INFO 28388 --- [EduStream] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-22T00:31:00.611+04:00  INFO 28388 --- [EduStream] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-22T00:31:00.704+04:00  INFO 28388 --- [EduStream] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@24d73c51
+2026-04-22T00:31:00.706+04:00  INFO 28388 --- [EduStream] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-22T00:31:00.724+04:00  WARN 28388 --- [EduStream] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-22T00:31:01.315+04:00  INFO 28388 --- [EduStream] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-22T00:31:01.408+04:00  INFO 28388 --- [EduStream] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-22T00:31:01.833+04:00  WARN 28388 --- [EduStream] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-22T00:31:01.933+04:00 DEBUG 28388 --- [EduStream] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 15 mappings in 'requestMappingHandlerMapping'
+2026-04-22T00:31:02.183+04:00  INFO 28388 --- [EduStream] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-22T00:31:02.419+04:00  INFO 28388 --- [EduStream] [main] efaultSchemaResourceGraphQlSourceBuilder : Loaded 1 resource(s) in the GraphQL schema.
+2026-04-22T00:31:02.539+04:00  INFO 28388 --- [EduStream] [main] o.s.b.a.g.GraphQlAutoConfiguration       : GraphQL schema inspection:
+	Unmapped fields: {}
+	Unmapped registrations: {}
+	Skipped types: []
+2026-04-22T00:31:02.556+04:00  INFO 28388 --- [EduStream] [main] s.b.a.g.s.GraphQlWebMvcAutoConfiguration : GraphQL endpoint HTTP POST /graphql
+2026-04-22T00:31:02.564+04:00 DEBUG 28388 --- [EduStream] [main] o.s.w.s.f.support.RouterFunctionMapping  : 1 RouterFunction(s) in 'routerFunctionMapping'
+2026-04-22T00:31:02.574+04:00 DEBUG 28388 --- [EduStream] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2026-04-22T00:31:02.597+04:00 DEBUG 28388 --- [EduStream] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-04-22T00:31:02.625+04:00 DEBUG 28388 --- [EduStream] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-04-22T00:31:03.276+04:00 DEBUG 28388 --- [EduStream] [main] o.s.d.r.l.RedisMessageListenerContainer  : Starting RedisMessageListenerContainer...
+2026-04-22T00:31:03.277+04:00 DEBUG 28388 --- [EduStream] [main] o.s.d.r.l.RedisMessageListenerContainer  : Postpone listening for Redis messages until actual listeners are added
+2026-04-22T00:31:03.452+04:00  INFO 28388 --- [EduStream] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-04-22T00:31:03.536+04:00  INFO 28388 --- [EduStream] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-22T00:31:03.623+04:00  INFO 28388 --- [EduStream] [main] com.ltc.edustream.EduStreamApplication   : Started EduStreamApplication in 5.397 seconds (process running for 5.787)
+2026-04-22T00:31:04.034+04:00  INFO 28388 --- [EduStream] [RMI TCP Connection(4)-192.168.1.125] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-22T00:31:04.035+04:00  INFO 28388 --- [EduStream] [RMI TCP Connection(4)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-22T00:31:04.035+04:00 DEBUG 28388 --- [EduStream] [RMI TCP Connection(4)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-04-22T00:31:04.035+04:00 DEBUG 28388 --- [EduStream] [RMI TCP Connection(4)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-04-22T00:31:04.035+04:00 DEBUG 28388 --- [EduStream] [RMI TCP Connection(4)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2026-04-22T00:31:04.036+04:00 DEBUG 28388 --- [EduStream] [RMI TCP Connection(4)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5d7b3a93
+2026-04-22T00:31:04.037+04:00 DEBUG 28388 --- [EduStream] [RMI TCP Connection(4)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@17f8c75e
+2026-04-22T00:31:04.038+04:00 DEBUG 28388 --- [EduStream] [RMI TCP Connection(4)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-04-22T00:31:04.038+04:00  INFO 28388 --- [EduStream] [RMI TCP Connection(4)-192.168.1.125] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-04-22T00:31:25.719+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html", parameters={}
+2026-04-22T00:31:25.732+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2026-04-22T00:31:25.748+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-04-22T00:31:25.758+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui.css", parameters={}
+2026-04-22T00:31:25.758+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.css", parameters={}
+2026-04-22T00:31:25.759+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2026-04-22T00:31:25.760+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+2026-04-22T00:31:25.760+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2026-04-22T00:31:25.760+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2026-04-22T00:31:25.760+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
+2026-04-22T00:31:25.760+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2026-04-22T00:31:25.760+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-04-22T00:31:25.761+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2026-04-22T00:31:25.761+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2026-04-22T00:31:25.761+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-04-22T00:31:25.761+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-04-22T00:31:25.763+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-04-22T00:31:25.776+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-22T00:31:25.806+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+2026-04-22T00:31:25.809+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2026-04-22T00:31:25.822+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2026-04-22T00:31:25.824+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8080/swagger-ui/oauth2-re (truncated)...]
+2026-04-22T00:31:25.827+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-22T00:31:25.831+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+2026-04-22T00:31:25.832+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2026-04-22T00:31:26.041+04:00  INFO 28388 --- [EduStream] [http-nio-8080-exec-8] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 199 ms
+2026-04-22T00:31:26.050+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2026-04-22T00:31:26.051+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2026-04-22T00:31:26.052+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-22T00:31:39.715+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/courses/all", parameters={}
+2026-04-22T00:31:39.717+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.edustream.controller.CourseController#getAll()
+2026-04-22T00:31:39.857+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-04-22T00:31:39.859+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[CourseResponse[id=16, title=IT, description=III Group, teacherName=Camel A., createdAt=2026-04-18T2 (truncated)...]
+2026-04-22T00:31:39.860+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-22T00:32:13.175+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/graphql", parameters={}
+2026-04-22T00:32:13.177+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-1] o.s.w.s.f.support.RouterFunctionMapping  : Mapped to org.springframework.boot.autoconfigure.graphql.servlet.GraphQlWebMvcAutoConfiguration$$Lambda$2126/0x0000025cb5c91e88@41ffb142
+2026-04-22T00:32:13.244+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-22T00:32:15.995+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/graphql", parameters={}
+2026-04-22T00:32:15.995+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-4] o.s.w.s.f.support.RouterFunctionMapping  : Mapped to org.springframework.boot.autoconfigure.graphql.servlet.GraphQlWebMvcAutoConfiguration$$Lambda$2126/0x0000025cb5c91e88@41ffb142
+2026-04-22T00:32:16.091+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-22T00:32:42.131+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/graphql", parameters={}
+2026-04-22T00:32:42.131+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-8] o.s.w.s.f.support.RouterFunctionMapping  : Mapped to org.springframework.boot.autoconfigure.graphql.servlet.GraphQlWebMvcAutoConfiguration$$Lambda$2126/0x0000025cb5c91e88@41ffb142
+2026-04-22T00:32:42.136+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-04-22T00:33:40.485+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/courses/create", parameters={}
+2026-04-22T00:33:40.486+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.edustream.controller.CourseController#create(CourseCreateRequest)
+2026-04-22T00:33:40.495+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CourseCreateRequest[title=III Group, description=Science, teacherName=Moon]]
+2026-04-22T00:33:42.716+04:00  INFO 28388 --- [EduStream] [http-nio-8080-exec-10] c.l.e.controller.CourseController        : Course added
+2026-04-22T00:33:42.717+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-04-22T00:33:42.717+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [CourseResponse[id=20, title=III Group, description=Science, teacherName=Moon, createdAt=2026-04-21T2 (truncated)...]
+2026-04-22T00:33:42.718+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2026-04-22T00:33:52.771+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/courses/all", parameters={}
+2026-04-22T00:33:52.771+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ltc.edustream.controller.CourseController#getAll()
+2026-04-22T00:33:52.789+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-04-22T00:33:52.789+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[CourseResponse[id=16, title=IT, description=III Group, teacherName=Camel A., createdAt=2026-04-18T2 (truncated)...]
+2026-04-22T00:33:52.790+04:00 DEBUG 28388 --- [EduStream] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
