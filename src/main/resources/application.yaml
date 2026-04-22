@@ -1,4 +1,8 @@
+server:
+  port: 8080
 spring:
+  main:
+    allow-bean-definition-overriding: true
   application:
     name: EduStream
   datasource:
@@ -35,10 +39,6 @@ spring:
     cache:
       type: redis
       ttl-seconds: 120
-  grpc:
-    course:
-      host: localhost
-      port: 6565
 logging:
   file:
     name: edustream-service.log

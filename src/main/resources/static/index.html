@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Course Live Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/stompjs@2.3.3/lib/stomp.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>body{font-family:Arial;margin:20px} #status{margin-bottom:10px}</style>
+</head>
+<body>
+<h2>Course Live Dashboard</h2>
+<div id="status">Connecting...</div>
+<canvas id="lessonsChart" width="600" height="300"></canvas>
+
+<script>
+    const socket = new SockJS('/ws');
+    const stompClient = Stomp.over(socket);
+    stompClient.debug = null;
+
+    const ctx = document.getElementById('lessonsChart').getContext('2d');
+    const chart = new Chart(ctx, {
+        type: 'bar',
+        data: { labels: [], datasets: [{ label: 'Lesson count', data: [], backgroundColor: 'rgba(54,162,235,0.6)' }] },
+        options: { responsive: true, scales: { y: { beginAtZero: true } } }
+    });
+
+    function updateChart(courseId, title, lessonCount) {
+        const label = `${courseId}: ${title}`;
+        const idx = chart.data.labels.indexOf(label);
+        if (idx === -1) {
+            chart.data.labels.push(label);
+            chart.data.datasets[0].data.push(lessonCount);
+        } else {
+            chart.data.datasets[0].data[idx] = lessonCount;
+        }
+        chart.update();
+    }
+
+    stompClient.connect({}, function(frame) {
+        document.getElementById('status').innerText = 'Connected';
+        stompClient.subscribe('/topic/course-updates', function(message) {
+            const payload = JSON.parse(message.body);
+            updateChart(payload.courseId, payload.courseTitle, payload.lessonCount);
+        });
+    }, function(err) {
+        document.getElementById('status').innerText = 'Connection error';
+        console.error(err);
+    });
+
+    // Demo: local button-less publish via REST (optional)
+    // You can POST to /api/demo/push to trigger server push (see optional controller below)
+</script>
+</body>
+</html>
